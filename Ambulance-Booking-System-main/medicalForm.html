@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Medical Information Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #faf8f8;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .form-heading {
+            color: #495057;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            background-color: #64020d;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #a40510;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="form-container">
+                    <h2 class="form-heading">Emergency Medical Information Form</h2>
+                    <form id="medicalInfoForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="dob" name="dob" placeholder="Date of Birth"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="bloodType" name="bloodType"
+                                placeholder="Blood Type">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="allergies" name="allergies" rows="3"
+                                placeholder="Allergies"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="medications" name="medications" rows="3"
+                                placeholder="Current Medications"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="conditions" name="conditions" rows="3"
+                                placeholder="Existing Medical Conditions"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="emergencyContact" name="emergencyContact"
+                                placeholder="Emergency Contact" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js">
+
+</script>
+
+</html>

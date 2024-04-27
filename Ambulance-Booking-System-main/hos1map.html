@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6fd41bbbdfd79329208123a97546ebb6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6fd41bbbdfd79329208123a97546ebb6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6fd41bbbdfd79329208123a97546ebb6 = L.map(
+                "map_6fd41bbbdfd79329208123a97546ebb6",
+                {
+                    center: [19.2063, 72.8746],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fffb77757b08ed305d6b6e59979d34af = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6fd41bbbdfd79329208123a97546ebb6);
+        
+    
+            var feature_group_04348178094ff5cf7dfa69456bb3b228 = L.featureGroup(
+                {}
+            ).addTo(map_6fd41bbbdfd79329208123a97546ebb6);
+        
+    
+            var marker_a687766834b33b0bd3ea357922763085 = L.marker(
+                [19.2063, 72.8746],
+                {}
+            ).addTo(feature_group_04348178094ff5cf7dfa69456bb3b228);
+        
+    
+            var icon_54536ec603cf112006ecda0c1953dfb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a687766834b33b0bd3ea357922763085.setIcon(icon_54536ec603cf112006ecda0c1953dfb4);
+        
+    
+        var popup_5c218ab6d9eaaa7a8bb184d69b1ad31d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d05cd0344fd93c9c2a122a5bbe6e67d2 = $(`<div id="html_d05cd0344fd93c9c2a122a5bbe6e67d2" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_5c218ab6d9eaaa7a8bb184d69b1ad31d.setContent(html_d05cd0344fd93c9c2a122a5bbe6e67d2);
+            
+        
+
+        marker_a687766834b33b0bd3ea357922763085.bindPopup(popup_5c218ab6d9eaaa7a8bb184d69b1ad31d)
+        ;
+
+        
+    
+</script>
+</html>
